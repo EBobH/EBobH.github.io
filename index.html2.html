@@ -1,0 +1,89 @@
+<html>
+<head>
+    <script>
+    function answer(){
+var radio = document.getElementsByName("trivia");
+var selection = false;
+var message = "";
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == 10 && radio[i].checked == true) {
+selection = true;
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>";
+} else {
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+}
+document.getElementById("response").innerHTML = message;
+
+} //end if statement
+} //end for loop
+
+    }//end function answer
+    </script>
+	<link type="text/css" rel="stylesheet" href="main.css" />
+<title> </title>
+<style>
+ 	
+</style>
+</head>
+<body id="background">
+	<header> </header>
+    <nav>
+     <ul>
+<li class="navitem"><a href="index.html"> Home </a>  </li>
+<li class="navitem"><a href="games.html"> Games </a>  </li>
+<li class="navitem"> <a href="videos.html"> Videos </a></li>
+</ul>   
+    <nav>
+<h1> Star Wars </h1>
+<p> all Star Wars movies ranked worst to best
+    
+    9-Attack Of The Clones
+
+    8-The Phantom Menace
+
+    7-Rogue One
+
+    6-Revenge Of The Sith
+
+    5-The Force Awakens
+
+    4-A New Hope
+
+    3-The Last Jedi
+
+    2-Return Of The Jedi
+
+    1-The Empire Strikes Back</p>
+<ol>
+<li>Characters-fantastic
+</li>Story-fine
+<li>Script-Corny
+</li>Action-Stunning
+<li>Effects-Good
+</li>Pacing-OK 
+</ol>
+<div class="wrap-trivia">
+<h2> Star Wars Quiz:</h2>
+<p> Who is the most annoying character in Star Wars?</p>
+</div>
+<form>
+    <div id="response"> </div>
+
+<input type="radio" name="EDIT" value="EDIT"> C3PO <br>
+<input type="radio" name="Jar Jar Binks" value="10"> Jar Jar Binks <br>
+<input type="radio" name="EDIT" value="EDIT"> Anakin Skywalker <br>
+<input type="radio" name="EDIT" value="EDIT"> George Lucas <br>
+<input type="button" id="submit" value="Click Here"onclick="answer()">
+</form>
+<img src=https://uproxx.files.wordpress.com/2016/01/jar-jar-binks.jpg?quality=100 />
+<img http://schmoesknow.com/wp-content/uploads/2016/07/star-wars-characters.jpg
+
+<hr>
+<center> Ethan Hardy <a href="http://simplycodingcourses.com"></a> </center>
+<footer>height:250px;
+width:99%;
+border:2px solid black;
+background-color blue </footer>
+</body>
+</html>
